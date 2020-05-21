@@ -1,0 +1,530 @@
+// Background
+.bg--main {
+	background-color: $colorGreen !important;
+}
+
+.bg--transparent {
+	background: transparent !important;
+}
+
+.bg--white {
+	background-color: $colorWhite !important;
+}
+
+.bg--blue {
+	background-color: $colorBlue !important;
+}
+
+.bg--blue-dark {
+	background-color: $colorBlueDark !important;
+}
+
+.bg--layer-light {
+	background: rgba($color: $colorBlueAqua, $alpha: 0.3)
+}
+
+.bg-origin--content {
+	background-origin: content-box !important;
+}
+
+.bg-origin--padding {
+	background-origin: padding-box !important;
+}
+
+.bg--gradient-green {
+	background-color: $colorGreenGradient;
+}
+
+.bg--header-radius {
+	background: $colorGreenGradient;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: skewY(-4deg);
+	transform-origin: top left;
+}
+
+// .bg--wave-blue-down {
+// 	background: url(~static/images/shapes/wave-blue.svg);
+// }
+
+//Demension
+.max-width {
+	width: 100% !important;
+}
+.w-max {
+	width: 100vmax;
+  }
+.h-max {
+height: max-content;
+}
+.h-15 {
+	height: 15px;
+  }
+.w-h-100 {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.min-height {
+    min-height: calc(100% - 48px);
+
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Font family
+.font--header {
+	font-family: $fontOpenSans;
+}
+
+.font--main {
+	font-family: $fontRoboto;
+}
+
+// Font size
+.font---header {
+	font-size: 4rem;
+}
+
+.font---sub-header {
+	font-size: 2rem;
+}
+
+.font---text {
+	font-size: 1rem;
+}
+
+.font---sub-text {
+	font-size: 0.75rem;
+}
+.font--25 {
+	font-size: get-rem(25);
+}
+.font--35 {
+font-size: get-rem(35);
+}
+.font--45 {
+	font-size: get-rem(45);
+}
+.font--50 {
+	font-size: get-rem(50);
+}
+.font--20 {
+font-size: get-rem(20);
+}
+.font--18 {
+font-size: get-rem(18);
+}
+.font--15 {
+font-size: get-rem(15);
+}
+.font--13 {
+font-size: get-rem(13);
+}
+.font--10 {
+	font-size: 10px;
+	}
+
+.h-300px {
+height: 300px;
+}
+.h-140px {
+height: 140px;
+}
+
+.font-20 {
+	font-size: get-rem(20) !important;
+
+	&::before {
+		font-size: get-rem(20) !important;
+	}
+}
+
+.font-31 {
+	font-size: get-rem(31) !important;
+
+	&::before {
+		font-size: get-rem(31) !important;
+	}
+}
+
+.font-12 {
+	font-size: get-rem(12) !important;
+
+	&::before {
+		font-size: get-rem(12) !important;
+	}
+}
+
+.font-15 {
+	font-size: get-rem(15) !important;
+
+	&::before {
+		font-size: get-rem(15) !important;
+	}
+}
+.font-18 {
+	font-size: get-rem(18) !important;
+
+	&::before {
+		font-size: get-rem(18) !important;
+	}
+}
+
+.font-22 {
+	font-size: get-rem(22) !important;
+
+	&::before {
+		font-size: get-rem(22) !important;
+	}
+}
+
+.font-32 {
+	font-size: get-rem(32) !important;
+
+	&::before {
+		font-size: get-rem(32) !important;
+	}
+}
+.font-54 {
+	font-size: get-rem(54) !important;
+
+	&::before {
+		font-size: get-rem(54) !important;
+	}
+}
+
+
+//Font weight
+.font--bold {
+	font-weight: 700 !important;
+}
+
+.font--regular {
+	font-weight: 400 !important;
+}
+
+.font--light {
+	font-weight: 300 !important;
+}
+
+//Button
+.btn--hover-origin {
+	&:hover {
+		background: inherit;
+		color: $colorWhite;
+	}
+}
+
+//Opacity
+.opacity-0 {
+	opacity: 0 !important;
+}
+
+.opacity-40 {
+	opacity: 0.4 !important;
+}
+
+.opacity-70 {
+	opacity: 0.7 !important;
+}
+
+//Border
+.border--circle {
+	border-radius: 50% !important;
+}
+
+.border-radius-0 {
+	border-radius: 0 !important;
+}
+
+.border-normal {
+	border: 1px solid $colorGray;
+}
+
+.border-none {
+	border: none;
+}
+
+.border-transparent {
+	border-color: transparent;
+}
+
+.br-25px {
+	border-radius: 25px;
+  }
+//Position
+
+.position--fixed {
+	position: fixed;
+}
+
+.position--relative {
+	position: relative;
+}
+.position-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.position-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lef-0 {
+	left: 0 !important;
+}
+
+.right-0 {
+	right: 0 !important;
+}
+
+.bottom-0 {
+	bottom: 0 !important;
+}
+
+
+//Object fit
+.object-fit--contain {
+	object-fit: contain !important;
+}
+
+.object-fit--cover {
+	object-fit: cover !important;
+}
+
+//Pointer
+.cursor-pointer {
+	cursor: pointer;
+}
+
+//Transform
+.translate-x-hidden {
+	transform: translateX(-100%);
+}
+
+.translate-x-0 {
+	transform: translateX(0);
+}
+
+.transform--skewY-4 {
+	transform: skewY(4deg);
+}
+
+//Image
+.img-auto {
+	width: 100%;
+	height: auto;
+}
+
+//Box sizing
+.box-content {
+	box-sizing: content-box;
+}
+
+.box-border {
+	box-sizing: border-box;
+}
+
+//Z-index
+.z-index--10 {
+	z-index: 10;
+}
+
+// Color
+.color-bg-blue {
+	background-color: $colorBlue;
+  }
+
+  .color-bg--gray {
+	background-color: $colorGray;
+  }
+  .color-bg--white {
+	background-color: $colorWhite;
+  }
+
+  .color-white {
+	color: $colorWhite;
+  }
+  .color-black {
+	color: $colorBlack;
+  }
+  .color-green {
+	color: $colorGreen;
+  }
+  .color-gray-height{
+	  color: $colorGrayHeight;
+  }
+  .color-blue {
+	color: $colorBlue;
+  }
+  .color-red {
+	color: $colorRed;
+  }
+  .color--gray {
+	  color: $colorGray;
+  }
+
+  .color-blue-dark {
+	  color: $colorBlueDark;
+  }
+  //Others
+.mainbar {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+  }
+  .topbar {
+	position: sticky;
+	top: 50px;
+	max-height: 700px;
+  }
+
+  .icon {
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+  }
+  .icon--footer {
+	margin: 1px;
+	height: 25px;
+	width: 25px;
+  }
+  .img--small {
+	height: 14px;
+	width: 14px;
+  }
+  .avatar {
+	height: 30px;
+	width: 30px;
+  }
+  .avatar--small {
+	height: 20px;
+	width: 20px;
+  }
+  .tagstart1 {
+	margin-top: 100px;
+	margin-bottom: 150px;
+  }
+  .color--orange {
+	color: $colorOrange ;
+  }
+  .tagstart {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .text-underline {
+	text-decoration: underline;
+  }
+//Font-weight
+  .font--bold {
+	font-weight: 700;
+  }
+  .font--regular-2 {
+	font-weight: 500;
+}
+  .font--regular {
+	  font-weight: 400;
+  }
+  .font--light {
+	font-weight: 300;
+  }
+  .font--lato {
+	font-family: $fontOpenSans;
+  }
+  .font--roboto {
+	font-family: $fontRoboto;
+  }
+
+.imgbackgound {
+	background: url(https://strapi.io/assets/images/bg_shadow-light_community.png),url(https://strapi.io/assets/images/bg_pattern.png),linear-gradient(315deg,#56ccf2 0,#3a95ee 73%,#2f80ed 100%);
+	}
+.imgbackgound1 {
+	background: url(https://oxilfiles.imgix.net/sgae/forms/images/bannerURL_Sk8GWLRce.jpeg),url(https://strapi.io/assets/images/bg_pattern.png),linear-gradient(315deg,#56ccf2 0,#3a95ee 73%,#2f80ed 100%);
+	}
+.width--175 {
+	width: get-rem(175);
+
+}
+.width--85 {
+	width: get-rem(85);
+
+}
+
+.width--400 {
+	width: 400px;
+}
+.width--420 {
+	width: 420px;
+}
+.height--15 {
+	height: 15px;
+}
+.height--20 {
+	height: 50px;
+}
+.height--25 {
+	height: 50px;
+}
+.height--55 {
+	height: 55px;
+}
+.height--85 {
+	height: 85px;
+}
+.height--180 {
+	height: get-rem(180);
+}
+.height--200{
+	height: 200px;
+}
+
+.height--600{
+	height: 600px;
+}
+.border-radius--4 {
+	border-radius: 4px;
+}
+.border-radius--6 {
+	border-radius: 6px;
+}
+.border-radius--10 {
+	border-radius: 10px;
+}
+
+.line-height--10 {
+	line-height: 10px;
+}
+.box-shadow--main {
+	box-shadow:0 2px 12px 0 rgba(0,0,0,.1);
+}
+.circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid $colorGreen;
+}
+
+// Overflow
+.overflow-hidden {
+	overflow: hidden !important;
+}
+
+.overflow-visible {
+	overflow: visible !important;
+}

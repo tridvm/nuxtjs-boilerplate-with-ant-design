@@ -1,0 +1,72 @@
+// @include respond-to(params) to call this.
+@mixin respond-to($media) {
+	@if $media == xl {
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $media == lg {
+		@media (min-width: 992px) and (max-width: 1199.98px){ @content; }
+	}
+	@else if $media == md {
+		@media (min-width: 768px) and (max-width: 991.98px){ @content; }
+	}
+	@else if $media == sm {
+		@media (min-width: 576px) and (max-width: 767.98px){ @content; }
+	}
+	@else if $media == xs {
+		@media (max-width: 576px) { @content; }
+	}
+	@else if $media == max-lg {
+		@media (max-width: 1200px) { @content; }
+	}
+	@else if $media == max-md {
+		@media (max-width: 992px) { @content; }
+	}
+	@else if $media == max-sm {
+		@media (max-width: 768px) { @content; }
+	}
+	@else if $media == min-lg {
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $media == min-md {
+		@media (min-width: 992px) { @content; }
+	}
+	@else if $media == min-sm {
+		@media (min-width: 768px) { @content; }
+	}
+	@else if $media == min-xs {
+		@media (min-width: 576px) { @content; }
+	}
+	@else if $media == max-screen-1366 {
+		@media (max-width: 1366px) { @content; }
+	}
+	@else if $media == max-screen-1920 {
+		@media (max-width: 1920px) { @content; }
+	}
+
+}
+
+// Change em to px
+@function exch($dem) {
+	@return $dem * (12/16) + px;
+}
+
+@function  prop($num) {
+	@return ($num / 1366) * 100 + vw;
+}
+
+@function get-vw($target) {
+	$vw-context: (1000 * .01) * 1px;
+	@return ($target / $vw-context) * 1vw;
+}
+
+@function get-rem($target) {
+	@return round($target*100/18)/100 + rem;
+}
+
+@function get-vmin($child, $parent) {
+	@return round($child*10000/$parent)/100 + vmin;
+}
+
+@function get-vmax($child, $parent) {
+	@return round($child*10000/$parent)/100 + vmax;
+}
