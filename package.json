@@ -20,7 +20,7 @@
     "@nuxtjs/toast": "^3.3.0",
     "@nuxtjs/auth": "^4.8.4",
     "cookie-universal-nuxt": "^2.0.18",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "vee-validate": "^3.2.1",
     "vuex-persistedstate": "^2.7.0"
   },
